@@ -1,0 +1,17 @@
+<div [hidden]="greetingHidden">
+  <h2 style="margin-top: 30px;">Hey! What's your name?</h2>
+  <hr>
+  <input
+    [(ngModel)]="firstName"
+    class="form-control"
+    placeholder="First Name"
+    style="margin-bottom: 10px;"
+    type="text"
+  >
+  <button
+    type="submit"
+    class="btn btn-success"
+    [disabled]="!firstName"
+    (click)="onNameSubmit()">Submit
+  </button>
+</div>

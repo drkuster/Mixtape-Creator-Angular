@@ -1,0 +1,33 @@
+<div [hidden]="!display">
+  <h2 style="margin-top: 30px;">Nice to meet you, {{ username }}!</h2>
+  <p>Enter some of your favorite songs below and we'll make you a cool mixtape :)</p>
+  <hr>
+  <h5 class="text-muted" [ngStyle]="{'color' : numSongsAdded < 2 ? 'red' : 'green'}">{{ numSongsAdded }} of 2 songs added{{ happy }}</h5>
+  <div class="col-sm-5">
+    <label for="song">Song</label>
+    <input
+      id="song"
+      type="text"
+      placeholder="Song Title"
+      class="form-control"
+      style="margin-bottom: 15px;"
+      [(ngModel)]="songName"
+    >
+    <label for="artist">Artist</label>
+    <input
+      id="artist"
+      type="text"
+      placeholder="Artist Name"
+      class="form-control"
+      style="margin-bottom: 15px;"
+      [(ngModel)]="artistName"
+    >
+    <button
+      type="submit"
+      class="btn btn-success"
+      [disabled]="checkButton()"
+      (click)="onAddSong()"
+      >Add Song
+    </button>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div [hidden]="display">
+  <h3>Nice work!</h3>
+  <h5>&darr; Check out what we made for you &darr;</h5>
+  <hr>
+  <div class="row">
+    <div class="col-md-5">
+    <ul class="list-group">
+      <li class="list-group-item" style="color: #636e72;"><strong>{{ name }}'s Mixtape:</strong></li>
+      <li [ngClass]="{'list-group-item': true, 'text-muted': true}"
+          *ngFor="let track of tracks; let i = index"
+      >
+        {{ i + 1 }}.)&nbsp; <em>{{ track.name }}</em> by <strong>{{ track.artist }}</strong>
+      </li>
+    </ul>
+    </div>
+  </div>
+</div>

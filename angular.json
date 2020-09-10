@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "mixtape-maker"
+    }
+  },
+  "defaultProject": "mixtape-maker",
+  "cli": {
+    "analytics": "66c7b9a8-2d2c-4977-a17f-4890f89fa4f2"
+  }
 }
