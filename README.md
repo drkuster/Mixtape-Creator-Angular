@@ -2,7 +2,7 @@
 
 ## Watch it in action!
 
-You can see a video demo of the site <a href="https://streamable.com/612qsb">here.</a>
+You can see a video demo of the site <a href="https://streamable.com/612qsb" target="_blank">here.</a>
 
 ## Description
 
